@@ -8,5 +8,5 @@ gulp.task('styles', function () {
 		.pipe(gulp.dest('app/styles'))
 		.pipe(reload({stream:true}))
 		.pipe($.size())
-		.pipe($.notify("Compilation complete."));;
+		.pipe($.notify("Compilation complete."));
 });
