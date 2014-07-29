@@ -1,3 +1,5 @@
+var gulp = require('gulp');
+
 gulp.task('watch', ['serve'], function () {
 
 	// watch for changes

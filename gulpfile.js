@@ -8,28 +8,15 @@ var reload = browserSync.reload;
 var gutil = require('gulp-util');
 
 // Quick Install from http://viget.com/extend/gulp-browserify-starter-faq
-var gulp = require('./gulp')([
-	'fonts',
-	'html',
-	'images',
-	'scripts',
-	'serve',
-	'styles',
-	'watch',
-	'wiredep',
-	'serve'
-]);
+/*
+	gulpfile.js
+	===========
+	Rather than manage one giant configuration file responsible
+	for creating multiple tasks, each task has been broken out into
+	its own file in gulp/tasks. Any file in that folder gets automatically
+	required by the loop in ./gulp/index.js (required below).
 
+	To add a new task, simply add a new task file to gulp/tasks.
+*/
 
-// Not sure if I should move these two to a different file.
-gulp.task('clean', function () {
-	return gulp.src(['app/styles/main.css', 'dist'], { read: false }).pipe($.clean());
-});
-
-gulp.task('default', ['clean'], function () {
-	gulp.start('build');
-});
-
-// These are modified versions of what http://viget.com/extend/gulp-browserify-starter-faq suggests
-gulp.task('build', ['html', 'images', 'fonts']);
-gulp.task('default', ['build', 'watch', 'serve', 'open']);
+require('./gulp');

@@ -1,3 +1,5 @@
+var gulp = require('gulp');
+
 gulp.task('html', ['styles', 'scripts'], function () {
 	var jsFilter = $.filter('**/*.js');
 	var cssFilter = $.filter('**/*.css');

@@ -1,3 +1,5 @@
+var gulp = require('gulp');
+
 gulp.task('scripts', function () {
 	return gulp.src('app/scripts/**/*.js')
 		.pipe($.jshint())

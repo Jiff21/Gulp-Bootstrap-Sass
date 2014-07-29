@@ -1,3 +1,5 @@
+var gulp = require('gulp');
+
 // inject bower components
 gulp.task('wiredep', function () {
 	var wiredep = require('wiredep').stream;
