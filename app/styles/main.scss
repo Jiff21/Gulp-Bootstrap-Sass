@@ -17,13 +17,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 			@include make-row();
 			background-position: center;
 			background-size: 100%;
-
+			color: white;
+			border-top: 30px solid black;
+			border-bottom: 30px solid black;
 			h3 {
 				padding: 10px;
-				color: white;
 			}
 			p {
-				padding: 10px;
+				padding: 0 20px;
 			}
 		}
 	}
@@ -57,6 +58,7 @@ body {
 }
 #seattle {
 	background-image:url(../images/Seattle.jpg);
+	padding-left: 55%;
 }
 
 
