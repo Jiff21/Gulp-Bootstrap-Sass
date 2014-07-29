@@ -3,9 +3,6 @@
 
 // load plugins that came with generator:
 var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-var gutil = require('gulp-util');
 
 // Quick Install from http://viget.com/extend/gulp-browserify-starter-faq
 /*
