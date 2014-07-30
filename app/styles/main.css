@@ -4495,7 +4495,8 @@ button.close {
       .article .full .mRoom:after {
         clear: both; }
       .article .full .mRoom h3 {
-        padding: 10px; }
+        padding: 10px;
+        color: white; }
       .article .full .mRoom p {
         padding: 10px; }
   .article .main {
