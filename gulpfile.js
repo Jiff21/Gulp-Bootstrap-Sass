@@ -1,10 +1,5 @@
 'use strict';
 // generated on 2014-07-25 using generator-gulp-bootstrap 0.0.4 modified according to http://viget.com/extend/gulp-browserify-starter-faq
-
-// load plugins that came with generator:
-var $ = require('gulp-load-plugins')();
-
-// Quick Install from http://viget.com/extend/gulp-browserify-starter-faq
 /*
 	gulpfile.js
 	===========

@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var $ = require('gulp-load-plugins')();
 
 gulp.task('html', ['styles', 'scripts'], function () {
 	var jsFilter = $.filter('**/*.js');

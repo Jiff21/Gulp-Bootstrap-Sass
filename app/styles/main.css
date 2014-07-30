@@ -4507,7 +4507,8 @@ button.close {
         padding: 10px; }
       .article .full .mRoom p {
         padding: 0 20px;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        font-size: 20px; }
   .article .main {
     position: relative;
     float: left;
@@ -4535,7 +4536,8 @@ button.close {
 /* Space out content a bit */
 body {
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  background: black; }
 
 .browsehappy {
   background: #ccc;
