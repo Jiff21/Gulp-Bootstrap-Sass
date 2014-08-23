@@ -16,14 +16,23 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 		.mRoom {
 			@include make-row();
 			background-position: center;
-			background-size: 100%;
-
+			background-size: cover;
+			border-top: 15px solid black;
+			border-bottom: 15px solid black;
+			color: white;
+			min-height: 200px;
+			@media(min-width: $screen-desktop){
+				border-top: 30px solid black;
+				border-bottom: 30px solid black;
+				min-height: 400px;
+			}
 			h3 {
 				padding: 10px;
-				color: white;
 			}
 			p {
-				padding: 10px;
+				padding: 0 20px;
+				margin-bottom: 5px;
+				font-size: 20px;
 			}
 		}
 	}
@@ -38,6 +47,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 body {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	background: black;
 }
 
 
@@ -51,12 +61,15 @@ body {
 // Setting Background images
 #ny {
 	background-image:url(../images/Ny.jpg);
+	padding-left: 5%;
 }
 #sf {
 	background-image:url(../images/Sf.jpg);
+	padding-left: 5%;
 }
 #seattle {
 	background-image:url(../images/Seattle.jpg);
+	padding-left: 60%;
 }
 
 

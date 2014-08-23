@@ -4488,17 +4488,28 @@ button.close {
       margin-left: -15px;
       margin-right: -15px;
       background-position: center;
-      background-size: 100%; }
+      background-size: cover;
+      border-top: 15px solid black;
+      border-bottom: 15px solid black;
+      color: white;
+      min-height: 200px; }
       .article .full .mRoom:before, .article .full .mRoom:after {
         content: " ";
         display: table; }
       .article .full .mRoom:after {
         clear: both; }
+      @media (min-width: 992px) {
+        .article .full .mRoom {
+          border-top: 30px solid black;
+          border-bottom: 30px solid black;
+          min-height: 400px; } }
       .article .full .mRoom h3 {
         padding: 10px;
         color: white; }
       .article .full .mRoom p {
-        padding: 10px; }
+        padding: 0 20px;
+        margin-bottom: 5px;
+        font-size: 20px; }
   .article .main {
     position: relative;
     float: left;
@@ -4526,7 +4537,8 @@ button.close {
 /* Space out content a bit */
 body {
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  background: black; }
 
 .browsehappy {
   background: #ccc;
@@ -4535,13 +4547,16 @@ body {
   padding: 0.2em 0; }
 
 #ny {
-  background-image: url(../images/Ny.jpg); }
+  background-image: url(../images/Ny.jpg);
+  padding-left: 5%; }
 
 #sf {
-  background-image: url(../images/Sf.jpg); }
+  background-image: url(../images/Sf.jpg);
+  padding-left: 5%; }
 
 #seattle {
-  background-image: url(../images/Seattle.jpg); }
+  background-image: url(../images/Seattle.jpg);
+  padding-left: 60%; }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header, .footer {
