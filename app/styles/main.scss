@@ -6,6 +6,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 .article{
 	@include make-row();
+	margin-top: 50px;
 	.aside {
 		@include make-xs-column(12);
 		@include make-sm-column(4);
@@ -48,6 +49,16 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background: black;
+}
+
+/* Nav Styling here */
+.navbar-brand {
+	img {
+		max-height: 30px;
+		max-width: 30px;
+		padding-right: 5px;
+		margin-top: -7px;
+	}
 }
 
 
