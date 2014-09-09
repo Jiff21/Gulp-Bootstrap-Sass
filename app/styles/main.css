@@ -4448,7 +4448,8 @@ button.close {
 
 .article {
   margin-left: -15px;
-  margin-right: -15px; }
+  margin-right: -15px;
+  margin-top: 50px; }
   .article:before, .article:after {
     content: " ";
     display: table; }
@@ -4538,6 +4539,13 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   background: black; }
+
+/* Nav Styling here */
+.navbar-brand img {
+  max-height: 30px;
+  max-width: 30px;
+  padding-right: 5px;
+  margin-top: -7px; }
 
 .browsehappy {
   background: #ccc;
