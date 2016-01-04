@@ -1,13 +1,14 @@
 var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+var bs = require('browser-sync');
+var reload = bs.reload;
 
 gulp.task('serve', ['styles'], function () {
-	browserSync.init(null, {
+	bs.init(null, {
 		server: {
-			baseDir: './app',
+			baseDir: ['./app', './dist'],
 			// set to true to browse directory instead of load index.
-			directory: false
+			directory: false,
+			index: "index.html"
 		},
 		debugInfo: false,
 		open: false,
