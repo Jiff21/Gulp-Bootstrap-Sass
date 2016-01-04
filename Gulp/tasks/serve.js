@@ -5,7 +5,7 @@ var reload = browserSync.reload;
 gulp.task('serve', ['styles'], function () {
 	browserSync.init(null, {
 		server: {
-			baseDir: 'app',
+			baseDir: './app',
 			directory: true
 		},
 		debugInfo: false,
